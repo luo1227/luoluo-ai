@@ -1,24 +1,25 @@
 [package]
 name = "app"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
-usls = { version = "0.2.0-alpha.3", features = ["tensorrt-full", "nvrtx-full", "cuda", "annotator"] }
+usls = { version = "0.2.0-alpha.3", features = ["cuda", "tensorrt", "all-models", "ort-download-binaries"] }
 egui = "0.27"
 eframe = "0.27"
-windows-capture = "1.4"
+windows-capture = { version = "2.0.0-alpha.7" }
 rfd = "0.14"
 anyhow = "1"
 tokio = { version = "1", features = ["full"] }
 parking_lot = "0.12"
 image = "0.25"
 ndarray = "0.17"
+rayon = "1.10"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 [profile.release]
 opt-level = 3
-lto = "fat"
+lto = true
+codegen-units = 1
 panic = "abort"
-strip = true
