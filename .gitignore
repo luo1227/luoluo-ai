@@ -1,2 +1,47 @@
-/target
+# Rust-specific
+/target/
+**/target/
+Cargo.lock
 *.lock
+
+# Model files
+*.onnx
+*.pt
+*.pth
+*.weights
+*.bin
+*.pb
+*.tflite
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test and coverage
+coverage/
+*.profraw
+*.gcda
+*.gcno
+
+# Documentation
+doc/
+*.md
+
+# Temporary files
+*.bak
+*~
