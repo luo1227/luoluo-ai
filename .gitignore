@@ -45,3 +45,6 @@ doc/
 # Temporary files
 *.bak
 *~
+
+test-py/*
+yolo/*

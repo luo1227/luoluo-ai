@@ -1,0 +1,10 @@
+{
+  "control": {
+    "yaw_sensitivity": 0.3,
+    "pitch_sensitivity": 0.3,
+    "hotkey": "x1",
+    "trigger_type": "Hold",
+    "x_target_offset": 0.0,
+    "y_target_offset": 0.0
+  }
+}
